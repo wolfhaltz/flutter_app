@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// A versão mais extensa de escrever o main:
 // void main(){
 //   runApp(MyApp());
 // }
