@@ -8,6 +8,11 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  // É aqui que coloco as funções que vão ser usadas:
+  void answerQuestion(){
+    print('Answer chosen!');
+  }
+
   @override
   Widget build(BuildContext context){
     var questions = [
@@ -26,15 +31,15 @@ class MyApp extends StatelessWidget {
             Text('The question!'),
             RaisedButton(
               child: Text('Option 01'),
-                onPressed: null
+                onPressed: ()=> { print('Aerial function!')},
             ),
             RaisedButton(
                 child: Text('Option 02'),
-                onPressed: null
+                onPressed: answerQuestion
             ),
             RaisedButton(
                 child: Text('Option 03'),
-                onPressed: null
+                onPressed: answerQuestion
             ),
           ],
         ),
