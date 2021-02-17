@@ -1,6 +1,10 @@
-# flutter_app
+# My First Flutter App
 
-A new Flutter application.
+This is my first Flutter application :)
+<br>
+I've coded following this course:
+<br>
+<a href="https://www.youtube.com/watch?v=x0uinJvhNxI">Academind</a>
 
 ## Getting Started
 
