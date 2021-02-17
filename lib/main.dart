@@ -28,7 +28,9 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: <Widget>[
-            Text('The question!'),
+            Text(
+                questions.elementAt(0),
+            ),
             RaisedButton(
               child: Text('Option 01'),
                 onPressed: ()=> { print('Aerial function!')},
