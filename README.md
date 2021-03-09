@@ -1,5 +1,7 @@
 # My First Flutter App
 
+<img src="banner.png" alt="My first Flutter app" />
+
 This is my first Flutter application :)
 <br>
 I've coded following this course:
