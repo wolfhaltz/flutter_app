@@ -9,13 +9,7 @@ Flutter
 Flutter application
 <br/><br/>
 <b>Description:</b><br/>
-This is my first Flutter application, I don't know what I'm doing :)
-<br>
-I started coding following this course:
-<br>
-<a href="https://www.youtube.com/watch?v=x0uinJvhNxI">Academind</a>
-<br/>
-And then I have no idea about what I'm doing :)
+This is a tutorial from NLW#5 that when I finished, I'll upgrade to keep studying and maybe publish it :)
 <br/>
 # Quick links &#128150;
   
@@ -51,9 +45,12 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # How is the development of the project right now?
-<b>Last update:</b> 09/03/2021
+<b>Last update:</b> 19/04/2021
 
-There's nothing that makes senses here, just a random and crazy app for study, my little wild lab. Maybe one day this is gonna make some sense, but not today satan. :)
+So, let's update:<br>
+I'm doing the NLW#5, in Flutter path, and doing the tutorial. It's a kind of DevQuiz, and I think that is a good idea to code,
+mainly because I have that useless and empty repo called "NeuroQuiz".<br>
+Well, now it will have a function hahahaha. Probably I'll do the app here and the website there :)
 <br/>
 
 # Credits
