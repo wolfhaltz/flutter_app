@@ -1,4 +1,5 @@
 import 'package:NeuroQuiz/core/app_gradients.dart';
+import 'package:NeuroQuiz/core/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class AppBarWidget extends PreferredSize {
@@ -12,7 +13,19 @@ class AppBarWidget extends PreferredSize {
             ),
             child: Row(
                 children:[
-                  Text("Hello there!\nYou're awesome today :)"),
+                  Text.rich(
+                      TextSpan(
+                          text: "Hello there!\nYou're ", style: AppTextStyles.title,
+                          children: [
+                            TextSpan(
+                              text: "awesome ", style: AppTextStyles.titleBold
+                            ),
+                            TextSpan(
+                              text: " today :)", style: AppTextStyles.title
+                            )
+                          ]
+                      )
+                  ),
                   Container(
                     height: 58,
                     width: 58,
