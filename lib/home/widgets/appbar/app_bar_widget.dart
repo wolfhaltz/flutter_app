@@ -11,7 +11,9 @@ class AppBarWidget extends PreferredSize {
             decoration: BoxDecoration(
                 gradient: AppGradients.linear,
             ),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children:[
                   Text.rich(
                       TextSpan(
