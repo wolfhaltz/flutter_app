@@ -17,6 +17,7 @@ class AppBarWidget extends PreferredSize {
                     height: 58,
                     width: 58,
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
                         image: NetworkImage(
                           "https://avatars.githubusercontent.com/u/37088290?v=4"
