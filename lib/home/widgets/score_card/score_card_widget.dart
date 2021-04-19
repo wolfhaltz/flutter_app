@@ -1,3 +1,5 @@
+import 'package:NeuroQuiz/core/app_colors.dart';
+import 'package:NeuroQuiz/core/app_text_styles.dart';
 import 'package:NeuroQuiz/home/widgets/chart/chart_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -5,7 +7,13 @@ class ScoreCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 136,
+      decoration: BoxDecoration(
+        color: AppColors.white,
+        borderRadius: BorderRadius.circular(15)
+      ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children:[
               Expanded(
                 flex:1,
@@ -17,9 +25,11 @@ class ScoreCardWidget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left:24),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text("Let's start"),
-                         Text("FInish the challenges and gain knowledge!")
+                         Text("Let's start", style: AppTextStyles.heading,),
+                         Text("FInish the challenges and gain knowledge!", style: AppTextStyles.body,)
                        ],
                       )
                     )
