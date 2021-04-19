@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
             ),
             body: Center(
                 child: Container(
-                  color: Colors.black,
+                  decoration: BoxDecoration(color: Colors.purple, borderRadius: BorderRadius.circular(10)),
                   child: Text(
-                      "Hello there! You're awesome today (like always). How are you?",
+                      "Hello there!\nYou're awesome today (like always).\nHow are you?",
                       style: TextStyle(fontSize: 24, color: Colors.white)
                   ),
                 )
