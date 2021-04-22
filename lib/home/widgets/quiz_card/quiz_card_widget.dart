@@ -20,15 +20,15 @@ class QuizCardWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-                height: 40, width: 40, child: Image.asset(AppImages.blocks)
+                height: 20, width: 20, child: Image.asset(AppImages.blocks)
             ),
-            SizedBox(height: 24),
+            SizedBox(height: 15),
             Text("Gerenciamento de Estado", style: AppTextStyles.heading15),
-            SizedBox(height: 24),
+            SizedBox(height: 15),
             Row(
                 children: [
                   Expanded(
-                    flex: 1,
+                    flex: 2,
                     child: Text("3 de 10", style: AppTextStyles.body11)
                   ),
                   Expanded(

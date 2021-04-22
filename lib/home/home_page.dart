@@ -17,19 +17,36 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBarWidget(),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                LevelButtonWidget(label: "Fácil"),
-                LevelButtonWidget(label: "Médio"),
-                LevelButtonWidget(label: "Difícil"),
-                LevelButtonWidget(label: "Perito"),
-              ],
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  LevelButtonWidget(label: "Fácil"),
+                  LevelButtonWidget(label: "Médio"),
+                  LevelButtonWidget(label: "Difícil"),
+                  LevelButtonWidget(label: "Perito"),
+                ],
+              ),
             ),
-            QuizCardWidget()
+            SizedBox(height: 10),
+            Expanded(
+              child: GridView.count(
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
+                crossAxisCount: 2,
+                children: [
+                  QuizCardWidget(),
+                  QuizCardWidget(),
+                  QuizCardWidget(),
+                  QuizCardWidget()
+                ],
+              ),
+            )
           ],
         ),
       )
