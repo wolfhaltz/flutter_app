@@ -1,4 +1,4 @@
-import 'package:NeuroQuiz/splash/splash_page.dart';
+import 'package:NeuroQuiz/challenge/challenge_page.dart';
 import 'package:NeuroQuiz/home/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "NeuroQuiz",
-      home: HomePage(),
+      home: ChallengePage(),
     );
   }
 }
