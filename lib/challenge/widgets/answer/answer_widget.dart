@@ -13,6 +13,23 @@ class AnswerWidget extends StatelessWidget {
     this.isSelected = false
   }) : super(key: key);
 
+  Color get _selectedColorRight =>
+      isRight ? AppColors.darkGreen : AppColors.darkRed;
+
+  Color get _selectedBorderRight =>
+      isRight ? AppColors.lightGreen : AppColors.lightRed;
+
+  Color get _selectedColorCardRight =>
+      isRight ? AppColors.lightGreen : AppColors.lightRed;
+
+  Color get _selectedBorderCardRight =>
+      isRight ? AppColors.green : AppColors.red;
+
+  TextStyle get _selectedTextStyleRight =>
+      isRight ? AppTextStyles.bodyDarkGreen : AppTextStyles.bodyDarkRed;
+
+  IconData get _selectedIconRight => isRight ? Icons.check : Icons.close;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,11 +44,31 @@ class AnswerWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Expanded(child: Text(title,style: AppTextStyles.body)),
+            Expanded(child:
+            Text(
+                title,
+                style:
+                  isSelected ? _selectedTextStyleRight : AppTextStyles.body
+              ),
+            ),
             Container(
               width: 24,
               height: 24,
-              child: Icon(Icons.check),
+              decoration: BoxDecoration(
+                color: isSelected ? _selectedColorCardRight : AppColors.white,
+                borderRadius: BorderRadius.circular(30),
+                border: Border.fromBorderSide(
+                  BorderSide(
+                      color: isSelected ? _selectedBorderCardRight : AppColors.lightGrey
+                  )
+                )
+              ),
+              child:
+                isSelected ? Icon(
+                  _selectedIconRight,
+                  color: AppColors.white,
+                  size: 16
+                ) : null,
             )
           ],
         ),

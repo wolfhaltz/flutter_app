@@ -8,13 +8,27 @@ class QuizWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       child: Container(
         child: Column(
           children: [
             Text(title, style: AppTextStyles.heading),
             SizedBox(height: 24),
-            AnswerWidget(title: "Possibilita a criação de aplicativos compilados naturalmente?")
+            AnswerWidget(
+              isRight: true,
+              isSelected: true,
+              title: "Possibilita a criação de aplicativos compilados naturalmente?"
+            ),
+            AnswerWidget(
+                isRight: false,
+                isSelected: false,
+                title: "Possibilita a criação de aplicativos compilados naturalmente?"
+            ),
+            AnswerWidget(
+                isRight: false,
+                isSelected: true,
+                title: "Possibilita a criação de aplicativos compilados naturalmente?"
+            ),
           ],
         ),
       ),
